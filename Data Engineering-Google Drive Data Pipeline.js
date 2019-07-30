@@ -5,7 +5,7 @@ function scan_files() {
   while (files.hasNext()) {
     var file = files.next();
     if (file.getName().substring(0, 10) != 'processed_' || file.getName().substring(0, 7) != 'loaded_') {
-      transformCSVfromdrive(file);
+      loadCSVfromdrive(file);
     }
   }
 };
